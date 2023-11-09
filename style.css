@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+header {
+    display: flex;
+    height: 150px;
+
+    padding: 32px;
+    margin-bottom: 16px;
+    justify-content: flex-end;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #E54724;
+    color: #FFF;
+
+    font-family: La Belle Aurore;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+
+}
+
+nav span {
+    padding: 64px;
+}
+
+.imghome:before {
+    content: " ";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 150;
+    z-index: 1;
+    background-image: url(/img/emSala.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 900px;
+    height: 70vh;
+    width: 100%;
+    opacity: 0.35;
+
+}
+
+.imghome .txtInicio {
+    z-index: 10;
+}
+
+.text {
+    height: 20vh;
+    background: #EFA923;
+    padding: 10rem;
+    color: #315E1C;
+
+    font-family: Mali;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    
+}
+
+.txtInicio {
+    color: #D72756;
+    position: relative;
+
+    font-family: La Belle Aurore;
+    font-size: 96px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: right;
+    margin-right: 150px;
+    
+}
+
+.home {
+    width: 100%;
+    height: 100vh;
+  
+
+}
+.saiba{
+    border-radius: 16px;
+background: #D45353;
+width: 553px;
+height: 104px;
+flex-shrink: 0;
+color: #FBFAF7;
+
+font-family: Sigmar One;
+font-size: 32px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+text-transform: uppercase;
+
+}
