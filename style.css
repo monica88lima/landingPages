@@ -819,7 +819,8 @@ footer {
 
     .metodologia article .funcAulas p {
         font-size: .9rem;
-        padding: 0 30rem;
+        
+        width: 25rem;
     }
 
     .valores {
@@ -829,6 +830,9 @@ footer {
     .contato {
         flex-direction: column;
         padding: 8rem 1rem;
+    }
+    .contato .contato-form h2 {
+        width: 25rem;
     }
 
     .footerCliente {
