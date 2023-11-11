@@ -11,7 +11,7 @@ html {
 }
 
 header {
-    top:0;
+    top: 0;
     z-index: 100;
     position: fixed;
     width: 100%;
@@ -35,7 +35,7 @@ header {
 }
 
 main {
-    
+
     top: 150px !important;
 }
 
@@ -43,7 +43,7 @@ header .menu ul {
     list-style: none;
     display: flex;
     justify-content: space-between;
-    gap: 2rem;    
+    gap: 2rem;
 }
 
 header .menu ul li a {
@@ -189,17 +189,18 @@ nav span {
 
 .sobre .sobreMim p {
     color: rgb(65, 11, 83);
-    font-family: sans-serif;
+
     font-size: 18px;
     font-style: normal;
     line-height: normal;
-    
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: justify;
     margin-top: 10px;
     justify-content: center;
-    width: 64rem;
+    width: 48rem;
 }
-.sobre .sobreMim details .line-space  li {
+
+.sobre .sobreMim details .line-space li {
     line-height: 32px;
     padding-left: .9em;
 }
@@ -217,28 +218,40 @@ nav span {
     text-align: justify;
     list-style-type: none;
 }
-.sobre .sobreMim details h5{
+
+.sobre .sobreMim details h5 {
     color: rgb(171, 121, 6);
     font-size: 20px;
     padding-top: 2rem;
     font-family: sans-serif;
 }
-.sobre .sobreMim details ol > li p {
+
+.sobre .sobreMim details ol>li p {
     color: rgb(15, 139, 227);
     font-size: 18px;
     font-weight: 700;
-    
-    padding: 0.6rem;;
+
+    padding: 0.6rem;
+    ;
 }
-.sobre .sobreMim details ol > li {
-    list-style-type:disc;
+
+.sobre .sobreMim details ol>li {
+    list-style-type: disc;
 }
+
 .metodologia {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     background-image: url("img/metodologia.svg");
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+.metodologia article{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .metodologia .aulas {
@@ -249,7 +262,7 @@ nav span {
     line-height: normal;
     margin-top: 64px;
     justify-content: center;
-    width: 90rem;
+    width: 60rem;
     text-align: center;
 
 }
@@ -316,7 +329,7 @@ nav span {
     color: #31B456;
 }
 
-.metodologia .funcAulas p{
+.metodologia .funcAulas p {
     color: #565357;
     font-family: Mali;
     text-align: center;
@@ -324,7 +337,7 @@ nav span {
     margin-bottom: 32px;
     justify-content: center;
     width: 90rem;
-    
+
 }
 
 .valores {
@@ -499,20 +512,21 @@ p {
     width: 166px;
     border: none;
 }
-.contato .contato-form form button  {
+
+.contato .contato-form form button {
     cursor: pointer;
     display: inline-block;
     position: relative;
     transition: 0.6s;
-  }
-  
+}
+
 .contato .contato-form form button:hover {
-    
+
     right: 0;
-    color:#fff;
+    color: #fff;
     background: rgb(241, 50, 50);
-   
-  }
+
+}
 
 .footerCliente {
     background: #E54724;
@@ -572,58 +586,235 @@ p {
 }
 
 footer {
-   
+
     background: #717070;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 16px;
-    
+
 }
+
 /* The snackbar - position it at the bottom and in the middle of the screen */
 #snackbar {
-    visibility: hidden; /* Hidden by default. Visible on click */
-    min-width: 250px; /* Set a default minimum width */
-    margin-left: -125px; /* Divide value of min-width by 2 */
-    background-color: #333; /* Black background color */
-    color: #fff; /* White text color */
-    text-align: center; /* Centered text */
-    border-radius: 2px; /* Rounded borders */
-    padding: 32px; /* Padding */
-    position: fixed; /* Sit on top of the screen */
-    z-index: 1; /* Add a z-index if needed */
-    left: 50%; /* Center the snackbar */
-    bottom: 30px; /* 30px from the bottom */
+    visibility: hidden;
+    /* Hidden by default. Visible on click */
+    min-width: 250px;
+    /* Set a default minimum width */
+    margin-left: -125px;
+    /* Divide value of min-width by 2 */
+    background-color: #333;
+    /* Black background color */
+    color: #fff;
+    /* White text color */
+    text-align: center;
+    /* Centered text */
+    border-radius: 2px;
+    /* Rounded borders */
+    padding: 32px;
+    /* Padding */
+    position: fixed;
+    /* Sit on top of the screen */
+    z-index: 1;
+    /* Add a z-index if needed */
+    left: 50%;
+    /* Center the snackbar */
+    bottom: 30px;
+    /* 30px from the bottom */
     height: 100px;
     font-size: 32px;
-  }
-  
-  /* Show the snackbar when clicking on a button (class added with JavaScript) */
-  #snackbar.show {
-    visibility: visible; /* Show the snackbar */
+}
+
+/* Show the snackbar when clicking on a button (class added with JavaScript) */
+#snackbar.show {
+    visibility: visible;
+    /* Show the snackbar */
     /* Add animation: Take 0.5 seconds to fade in and out the snackbar.
     However, delay the fade out process for 2.5 seconds */
     -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
     animation: fadein 0.5s, fadeout 0.5s 2.5s;
-  }
+}
+
+/* Animations to fade the snackbar in and out */
+@-webkit-keyframes fadein {
+    from {
+        bottom: 0;
+        opacity: 0;
+    }
+
+    to {
+        bottom: 30px;
+        opacity: 1;
+    }
+}
+
+@keyframes fadein {
+    from {
+        bottom: 0;
+        opacity: 0;
+    }
+
+    to {
+        bottom: 30px;
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeout {
+    from {
+        bottom: 30px;
+        opacity: 1;
+    }
+
+    to {
+        bottom: 0;
+        opacity: 0;
+    }
+}
+
+@keyframes fadeout {
+    from {
+        bottom: 30px;
+        opacity: 1;
+    }
+
+    to {
+        bottom: 0;
+        opacity: 0;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+
+    header {
+        width: 100%;
+
+        display: flex;
+        padding: 16px 2px 16px 8px;
+        flex-direction: column;
+        align-items: self-start;
+        font-size: .7rem;
+        justify-content: space-around;
+
+
+    }
+
+    header .logo a img {
+        width: 40px;
+
+
+
+    }
+
+    header .menu ul li a {
+
+        font-size: 14px;
+    }
+
+    .home .img1 {
+        display: none !important;
+
+    }
+
+    .home {
+        width: 100%;
+        padding-top: 100px;
+    }
+
+    .home .txtInicio p {
+        font-size: 24px;
+
+
+    }
+
+    .home .txtInicio h1 {
+        font-size: 32px;
+        text-align: center;
+        font-weight: 700;
+
+
+    }
+
+    .saiba {
+
+        padding: 12px 12px;
+        margin-left: 65px;
+        font-size: 24px;
+
+    }
+
+    .sobre {
+        width: 100%;
+        flex-direction: column;
+        padding-top: 2px;
+
+
+    }
+
+    .sobre .img2 {
+        padding-left: 66px;
+
+    }
+
+    .sobre .sobreMim h1 {
+        font-size: 1.8rem;
+        padding: 10px;
+    }
+
+    .sobre .sobreMim h2 {
+        font-size: 1.2rem;
+        padding: 10px;
+    }
+
+    .sobre .sobreMim span {
+        font-size: 1.3rem;
+        padding: 16px;
+    }
+
+    .sobre .sobreMim p {
+        font-size: .96rem;
+        width: 35rem;
+        padding: 32px;
+
+    }
+
+    .sobre .sobreMim details {
+        display: none !important;
+    }
+    .metodologia article .escolha-aula{
+        flex-direction: column;
+        align-items: center;
+    }
   
-  /* Animations to fade the snackbar in and out */
-  @-webkit-keyframes fadein {
-    from {bottom: 0; opacity: 0;}
-    to {bottom: 30px; opacity: 1;}
-  }
-  
-  @keyframes fadein {
-    from {bottom: 0; opacity: 0;}
-    to {bottom: 30px; opacity: 1;}
-  }
-  
-  @-webkit-keyframes fadeout {
-    from {bottom: 30px; opacity: 1;}
-    to {bottom: 0; opacity: 0;}
-  }
-  
-  @keyframes fadeout {
-    from {bottom: 30px; opacity: 1;}
-    to {bottom: 0; opacity: 0;}
-  }
+
+ 
+    .metodologia article .aulas{
+       font-size: .9rem;
+       padding: 0 12rem ;
+    }
+    .metodologia article .funcAulas p{
+        font-size: .9rem;
+        padding: 0 30rem ;
+    }
+
+    .valores {
+        flex-direction: column;
+    }
+    .contato{
+        flex-direction: column;
+        padding: 8rem 1rem;
+    }
+    .footerCliente{
+        flex-direction: column;
+        padding: 8rem 1rem;
+
+    }
+
+   
+
+}
