@@ -17,23 +17,46 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Akshar&family=La+Belle+Aurore&family=Mali:ital@1&family=Sigmar+One&display=swap"
         rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Akshar&family=La+Belle+Aurore&family=Lexend+Giga:wght@700&family=Mali:ital@1&family=Sigmar+One&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Akshar&family=La+Belle+Aurore&family=League+Spartan:wght@300&family=Lexend+Giga:wght@700&family=Mali:ital@1&family=Sigmar+One&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Akshar&family=Edu+TAS+Beginner&family=La+Belle+Aurore&family=League+Spartan:wght@300&family=Lexend+Giga:wght@700&family=Mali:ital@1&family=Sigmar+One&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
     <header>
         <figure class="logo">
-            <img src="/img/logo.png" alt="logo">
+            <a href="#home">
+                <img src="/img/logo.png" alt="logo" width="96">
+            </a>
         </figure>
         <nav class="menu">
-            <span>Sobre Mim</span>
-            <span>Metodologia</span>
-            <span>Valores</span>
-            <span>Contato</span>
+
+            <ul>
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#sobre">Sobre Mim</a></li>
+                <li><a href="#metodologia">Metodologia</a></li>
+
+                <li><a href="#valores">Valores</a></li>
+                <li><a href="#contato">Contato</a></li>
+
+            </ul>
         </nav>
 
     </header>
     <main>
-        <section class="home">
+        <section class="home" id="home">
 
             <div class="txtInicio">
                 <p>PRECISA DE AJUDA COM SEU PEQUENO EXPLORAR?</p>
@@ -46,7 +69,7 @@
             </figure>
 
         </section>
-        <section class="sobre">
+        <section class="sobre" id="sobre">
             <figure class="img2">
                 <img src="/img/metodo.jpg" alt="logo">
             </figure>
@@ -62,33 +85,48 @@
                         experiência prática, estou comprometida em proporcionar uma educação
                         de qualidade que inspire e capacite os alunos. Minha abordagem pedagógica
                         se baseia em metodologias ativas, onde a aprendizagem é uma jornada dinâmica e colaborativa.
-                    </p><br>
-                    <strong>Experiência Profissional</strong><br>
-                    <p>Professora Especializada em Alfabetização Escola Primária Encantada, Cidade dos Sonhos</p>
-                    <ul>
-                        <li>Desenvolvimento e implementação de programas de alfabetização interativos e envolventes.
-                        </li>
-                        <li>Utilização de metodologias ativas para promover a participação ativa dos alunos no
-                            processo de
-                            aprendizagem.</li>
-                        <li>Personalização do currículo para atender às necessidades individuais de cada aluno,
-                            promovendo o
-                            desenvolvimento de habilidades de leitura e escrita.</li>
-                    </ul>
-
-                    <p>Consultora Educacional em Metodologias Ativas Instituto de Educação Progressiva, Cidade
-                        Imaginária
                     </p>
-                    <ul>
-                        <li>Colaboração com educadores para integrar estratégias pedagógicas inovadoras em seus
-                            planos de aula.
-                        </li>
-                        <li>Facilitação de workshops e treinamentos sobre práticas de ensino centradas no aluno.
-                        </li>
-                        <li>Desenvolvimento de recursos educacionais interativos para enriquecer o processo de
-                            aprendizado.</li>
+                    <div class="line-space">
+                        <h5>Experiência Profissional</h5><br>
+                        <ol>
+                            <li>
+                                <p>Professora Especializada em Alfabetização Escola Primária Encantada, Cidade dos
+                                    Sonhos</p>
+                                <ul>
+                                    <li>Desenvolvimento e implementação de programas de alfabetização interativos e
+                                        envolventes.
+                                    </li>
+                                    <li>Utilização de metodologias ativas para promover a participação ativa dos alunos
+                                        no
+                                        processo de
+                                        aprendizagem.</li>
+                                    <li>Personalização do currículo para atender às necessidades individuais de cada
+                                        aluno,
+                                        promovendo o
+                                        desenvolvimento de habilidades de leitura e escrita.</li>
+                                </ul>
+                            </li><br>
+                            <li>
+                                <p>Consultora Educacional em Metodologias Ativas Instituto de Educação Progressiva,
+                                    Cidade
+                                    Imaginária</p>
 
-                        <h6>Educação</h6>
+                                <ul>
+                                    <li>Colaboração com educadores para integrar estratégias pedagógicas inovadoras em
+                                        seus
+                                        planos de aula.
+                                    </li>
+                                    <li>Facilitação de workshops e treinamentos sobre práticas de ensino centradas no
+                                        aluno.
+                                    </li>
+                                    <li>Desenvolvimento de recursos educacionais interativos para enriquecer o processo
+                                        de
+                                        aprendizado.
+                                    </li>
+                            </li>
+                        </ol>
+
+                        <h5>Educação</h5><br>
                         <ul>
                             <li>Mestrado em Educação com Especialização em Alfabetização- Universidade dos Sonhos,
                                 Cidade dos
@@ -101,14 +139,14 @@
                             <li>Bacharelado em Pedagogia Universidade da Imaginação, Cidade do Saber
                                 Ênfase em Educação Infantil e Desenvolvimento Curricular.</li>
                         </ul>
-                        <strong>Certificações</strong>
+                        <h5>Certificações</h5><br>
                         <ul>
                             <li>Certificado em Metodologias Ativas Instituto de Inovação Educacional, Cidade do
                                 Futuro</li>
                             <li> Certificado em Tecnologia Educacional Plataforma de Aprendizado Digital, Cidade
                                 Virtual</li>
                         </ul>
-                        <strong>Habilidades</strong>
+                        <h5>Habilidades</h5><br>
                         <ul>
                             <li>Desenvolvimento e Implementação de Programas de Alfabetização</li>
                             <li>Metodologias Ativas e Aprendizagem Baseada em Projetos </li>
@@ -117,151 +155,200 @@
                             <li>Colaboração e Facilitação de Workshops Educacionais</li>
 
                         </ul>
-                        
+
+
+                    </div>
+
                 </details><br>
                 <span>Filosofia Educacional:</span>
-                        <p>Acredito profundamente no poder transformador da educação. Tenho uma convicção inabalável
-                            de que
-                            todos os alunos podem aprender e prosperar quando são inspirados, apoiados e desafiados
-                            de maneiras
-                            significativas. Minha missão é criar um ambiente de aprendizado estimulante, onde os
-                            alunos se
-                            sintam valorizados, motivados e capacitados a se tornarem leitores proficientes e
-                            aprendizes ao
-                            longo da vida.</p>
-               
-              
+                <p>Acredito profundamente no poder transformador da educação. Tenho uma convicção inabalável
+                    de que
+                    todos os alunos podem aprender e prosperar quando são inspirados, apoiados e desafiados
+                    de maneiras
+                    significativas. Minha missão é criar um ambiente de aprendizado estimulante, onde os
+                    alunos se
+                    sintam valorizados, motivados e capacitados a se tornarem leitores proficientes e
+                    aprendizes ao
+                    longo da vida.</p>
+
+
 
             </article>
         </section>
-        <section class="metodologia">
+        <section class="metodologia" id="metodologia">
             <article>
+                <h1>Por que Escolher Nossas Aulas:</h1>
+
                 <div class="aulas">
                     Ofereço <strong> aulas particulares personalizadas</strong> para crianças em idade pré-escolar,
-                    cultivando habilidades essenciais como leitura, escrita, matemática e habilidades sociais. 
+                    cultivando habilidades essenciais como leitura, escrita, matemática e habilidades sociais.
                     Utilizo <strong>técnicas inovadoras </strong> e material didático cuidadosamente selecionado para
                     garantir que cada criança alcance seu pleno potencial.
                 </div>
-                <h1>Por que Escolher Nossas Aulas:</h1>
-                <div class="text1">
-                    <h6>
-                        Abordagem Individualizada:
-                    </h6>
-                    <p>Cada criança é única, e minhas aulas são adaptadas às necessidades individuais de aprendizado de
-                        cada aluno.</p>
+
+                <div class="escolha-aula">
+                    <div class="text1">
+                        <figure class="imgAbordagem"> <img src="/img/leitura.png" alt="leitura"></figure>
+                        <h6>
+                            Abordagem Individualizada
+                        </h6>
+                        <p>Cada criança é única, e minhas aulas são adaptadas às necessidades individuais de aprendizado
+                            de
+                            cada aluno.</p>
+                    </div>
+                    <div class="text2">
+                        <figure class="imgAbordagem"> <img src="/img/explorando.png" alt="leitura"></figure>
+                        <h6>
+                            Ambiente Encorajador
+                        </h6>
+                        <p>Fomento um ambiente onde a curiosidade é estimulada e a confiança é construída, ajudando as
+                            crianças a se sentirem seguras para explorar e aprender.</p>
+                    </div>
+                    <div class="text3">
+                        <figure class="imgAbordagem"> <img src="/img/brincando.png" alt="leitura"></figure>
+                        <h6>
+                            Aprendizado Divertido
+                        </h6>
+                        <p>As atividades educacionais são planejadas para serem envolventes, divertidas e interativas,
+                            tornando o processo de aprendizado emocionante para os pequenos.</p>
+                    </div>
                 </div>
-                <div class="text2">
-                    <h6>
-                        Ambiente Encorajador:
-                    </h6>
-                    <p>Fomento um ambiente onde a curiosidade é estimulada e a confiança é construída, ajudando as
-                        crianças a se sentirem seguras para explorar e aprender.</p>
-                </div>
-                <div class="text3">
-                    <h6>
-                        Aprendizado Divertido:
-                    </h6>
-                    <p>As atividades educacionais são planejadas para serem envolventes, divertidas e interativas,
-                        tornando o processo de aprendizado emocionante para os pequenos.</p>
-                </div>
+
                 <h1>Como Funcionam as Aulas: </h1>
                 <div class="funcAulas">
                     <p>
-                        As aulas são realizadas de <strong>forma presencial ou online </strong>, conforme a conveniência dos pais e das
-                        crianças. A flexibilidade de horários permite que ajustemos as aulas de acordo com as necessidades
-                        da sua família, garantindo assim uma experiência de <strong>aprendizado tranquila e eficaz</strong>.
+                        As aulas são realizadas de <strong>forma presencial ou online </strong>, conforme a conveniência
+                        dos pais e das
+                        crianças. A flexibilidade de horários permite que ajustemos as aulas de acordo com as
+                        necessidades
+                        da sua família, garantindo assim uma experiência de <strong>aprendizado tranquila e
+                            eficaz</strong>.
                     </p>
 
                 </div>
-               
+
             </article>
         </section>
-        <section class="valores">
-            <figure>
-                <img src="/img/livro.png" alt="livro">
-            </figure>
-            <div class="txtTitulo">
-                <p>VALORES</p>
+        <section class="valores" id="valores">
+            <div class="valores-info">
+                <figure>
+                    <img src="/img/livro.png" alt="livro">
+                    <h1>VALORES</h1>
+                </figure>
+
+                <div class="valores-consulte">
+                    <span>Montamos pacotes Personalizados</span>
+                    <button class="consulte" type="consulte">consulte-nos</button>
+                </div>
             </div>
-            <div class="txtInfo">
-                <p>Montamos pacotes Personalizados.</p>
-                <button type="consulte">consulte-nos</button>
-            </div>
-            <article>
+
+            <div class="valores-info-mais">
+
                 <p>
                     Hora Aula R$ 110,00 <br>
                     Sondagem Inicial R$50,00 <br>
                     Taxa Deslocamento (Por km) R$10,00 <br>
                     Mentoria para Família R$250,00 <br>
                 </p>
-                <p>Pacote Basic Mensal R$ 350,00</p><br>
-                <p>2 Horas de Aula Remota (seg e sex )</p><br>
 
-                <p>Pacote Standard Mensal R$ 460,00</p><br>
-                <p>2 Horas de Aula Remota(seg)<br>
-                    3 Horas de Aula Presencial (sexta)</p><br>
+                <p>
+                    <span style="color: #EA721B;">Pacote Basic Mensal R$ 350,00</span>
+                    2 Horas de Aula Remota (seg e sex )
+                </p>
 
-                <p>Pacote Premium Mensal R$ 680,00</p><br>
-                <p>4 Horas de Aula Presencial (livre escolha)<br>
+                <p>
+                    <span style="color: #10744A;">Pacote Standard Mensal R$ 460,00</span>
+                    2 Horas de Aula Remota(seg)<br>
+                    3 Horas de Aula Presencial (sexta)
+                </p>
+
+                <p>
+                    <span style="color: #BE40F9;">Pacote Premium Mensal R$ 680,00</span>
+                    4 Horas de Aula Presencial (livre escolha)<br>
                     1 Hora de Aula Remota<br>
-                    1 Hora de Mentoria Familiar</p><br>
-            </article>
+                    1 Hora de Mentoria Familiar
+                </p>
+            </div>
+
         </section>
-
-
-        <section class="contato">
+        <section class="contato" id="contato">
             <aside>
                 <h2>Entre em Contato</h2>
-                <p>Estou aqui para ajudar seu filho(a) a prosperar acadêmica e emocionalmente.<br>
-            </aside>
-            <form action="">
-                <input type="text" placeholder="Digite seu Nome"><br>
-                <input type="email" name="email" id="email" placeholder="Digite seu Email"><br>
-                <input type="tel" name="telefone" id="telefone" placeholder="Digite seu Telefone"><br>
-                <label for="msg">Mensagem</label><br>
-                <textarea id="msg" name="msg" rows="6" cols="50"></textarea>
-                <br>
-                <button type="submit">Enviar</button>
-            </form>
-            <address>
-                Rua das Rosas, 54 - Sino/SP<br>
-                Telefone: (11) 4567 -5476
-            </address>
-            <figure class="imgContatos">
+                <p>Estou aqui para ajudar seu filho(a) a prosperar<br> acadêmica e emocionalmente.<br>
 
-                <img src="/img/whats.png" alt="telefone">
-                <img src="/img/gmail.png" alt="gmail">
-                <img src="/img/intagram.png" alt="instagram">
+                <address>
+                    Rua das Rosas, 54 - Sino/SP<br>
+                    Telefone: (11) 4567 -5476
+                </address>
+                <figure class="imgContatos">
+                    <a href="tel:1145675476">
+
+                    <img src="/img/whats.png" alt="telefone"></a>
+                    <a href = "mailto:anaprofessora@gmail.com">
+                    <img src="/img/gmail.png" alt="gmail"> </a>
+                    <img src="/img/intagram.png" alt="instagram">
+
+                </figure>
+            </aside>
+            <div class="contato-form">
+                <h2>
+                    Junte-se a nós nesta jornada educacional emocionante e prepare seu filho(a) para um futuro
+                    brilhante!
+
+                    Estou ansiosa para conhecer você e seu pequeno explorador.
+                </h2>
+                <form action="">
+                    <input class="contato-form-control" type="text" placeholder="Digite seu Nome"><br>
+                    <input class="contato-form-control" type="email" name="email" id="email"
+                        placeholder="Digite seu Email"><br>
+                    <input class="contato-form-control" type="tel" name="telefone" id="telefone"
+                        placeholder="Digite seu Telefone"><br>
+
+                    <textarea placeholder="Mensagem" class="contato-form-control" id="msg" name="msg" rows="6"
+                        cols="50"></textarea>
+                    <br>
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+
+
+        </section>
+        <section class="footerCliente">
+            <figure class="imgFooter">
+                <img src="/img/img_footer.png" alt="Ilustracao professora">
 
             </figure>
+            <div class="inf">
+                <h2>Precisa de Ajuda</h2>
+                <ul>
+                    <li><a href="#home">Inicio</a></li>
+                    <li><a href="#metodologia">Metodologia</a></li>
+
+                    <li><a href="#valores">Valores</a></li>
+                    <li><a href="#sobre">Sobre Mim</a></li>
+                    <li><a href="#contato">Contato</a></li>
+
+                </ul>
+            </div>
+            <div class="redes">
+                <h2>Siga-me</h2>
+                <div class="redes-link">
+                    <img src="/img/facebook.png" alt="facebook">
+                    <img src="/img/youtube.png" alt="youtube" width="48">
+
+                </div>
+            </div>
         </section>
 
     </main>
     <footer>
-        <figure class="imgFooter">
-            <img src="/img/img_footer.png" alt="Ilustracao professora">
+        <a href="https://github.com/monica88lima" target="_blank">
+        <img src="/img/git.png" alt="gitHub" width="26"></a>
+        <a href="https://www.linkedin.com/in/monicalima/" target="_blank">
+        <img src="/img/linkedin.png" alt="linkedin" width="26"></a>
+        &copy; Copyright 2023 -  <strong> Criado por   Monica Lima</strong>
 
-        </figure>
-        <div class="inf">
-            <h6>Precisa de Ajuda</h6>
-            <a href="#home">Inicio</a>
-            <a href="#metodologia">Metodologia</a>
-            <a href="#valores">Valores</a>
-            <a href="#sobre">Sobre Mim</a>
-            <a href="#contato">Contato</a>
 
-        </div>
-        <div class="redes">
-            <h6>Siga-me</h6>
-            <img src="/img/facebook.png" alt="facebook">
-            <img src="/img/youtube.png" alt="youtube">
-        </div>
-        <div class="editor">
-            <img src="/img/git.png" alt="gitHub">
-            <img src="/img/linkedin.png" alt="linkedin">
-            &copy; Copyright 2023 Criado por Monica Lima
-
-        </div>
     </footer>
 </body>
 
