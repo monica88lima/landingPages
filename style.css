@@ -9,8 +9,8 @@ header {
     display: flex;
     height: 150px;
 
-    padding: 32px;
-    margin-bottom: 16px;
+    padding: 24px;
+
     justify-content: flex-end;
     display: flex;
     align-items: center;
@@ -31,31 +31,34 @@ nav span {
     padding: 64px;
 }
 
-.imghome:before {
-    content: " ";
-    display: block;
-    position: absolute;
-    left: 0;
-    top: 150;
-    z-index: 1;
-    background-image: url(/img/emSala.jpg);
-    background-repeat: no-repeat;
-    background-size: 100% 900px;
-    height: 70vh;
+.home {
+    background: #FCFADA;
     width: 100%;
-    opacity: 0.35;
-
+    height: 600px;
+    display: flex;
+    justify-content: space-around;
 }
 
-.imghome .txtInicio {
-    z-index: 10;
+.home .txtInicio h1 {
+    color: #D72756;
+    font-family: La Belle Aurore;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    display: flex;
+    justify-content: space-between;
+    padding: 32px;
+    margin-top: 32px;
 }
 
-.text {
-    height: 20vh;
-    background: #EFA923;
-    padding: 10rem;
-    color: #315E1C;
+.home .txtInicio {
+    margin-top: 50px;
+    padding: 64px;
+}
+
+.home .txtInicio p {
+    color: #4D4545;
 
     font-family: Mali;
     font-size: 32px;
@@ -63,42 +66,204 @@ nav span {
     font-weight: 400;
     line-height: normal;
     text-transform: uppercase;
-    
 }
 
-.txtInicio {
-    color: #D72756;
-    position: relative;
+.home .img1 {
+    padding-top: 140px;
+}
 
-    font-family: La Belle Aurore;
-    font-size: 96px;
+
+.saiba {
+    border-radius: 16px;
+    background: #D45353;
+    border: none;
+    padding: 20px 48px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    color: #FBFAF7;
+    margin-left: 150px;
+    margin-top: 70px;
+
+
+    font-family: KyivType Sans;
+    font-size: 20px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    text-align: right;
-    margin-right: 150px;
-    
+    text-transform: uppercase;
 }
 
-.home {
-    width: 100%;
-    height: 100vh;
+.saiba {
+    transition-duration: 0.4s;
+}
+
+.saiba:hover {
+    background-color: #46700b;
+    color: #FFF;
+}
+
+.sobre {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    padding-top: 24px;
+
+
+}
+
+.sobre .img2 img {
+
+    border-radius: 16px;
+}
+
+.sobre .sobreMim h1 {
+    color: #000;
+    font-family: Mali;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 28px;
+
+}
+
+.sobre .sobreMim h2 {
+    color: #000;
+    font-family: Akshar;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+}
+
+.metodologia .aulas {
+    color: #565357;
+    font-family: Mali;
+    font-size: 24px;
+    font-style: normal;
+    line-height: normal;
+    margin-top: 64px;
+    justify-content: center;
+    width: 90rem;
+
+}
+
+.sobre .sobreMim span {
+    color: #5e0b7a;
+    font-family: Mali;
+    font-size: 32px;
+    font-style: normal;
+    line-height: normal;
+    margin-top: 40px;
+    justify-content: center;
+    width: 64rem;
+
+}
+
+.sobre .sobreMim p {
+    color: rgb(65, 11, 83);
+    font-family: Mali;
+    font-size: 18px;
+    font-style: normal;
+    line-height: normal;
+    margin-top: 10px;
+    justify-content: center;
+    width: 64rem;
+
+}
+
+.metodologia {
+    display: flex;
+    justify-content: space-around;
+    
   
 
 }
-.saiba{
-    border-radius: 16px;
-background: #D45353;
-width: 553px;
-height: 104px;
-flex-shrink: 0;
-color: #FBFAF7;
 
-font-family: Sigmar One;
-font-size: 32px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-text-transform: uppercase;
+.metodologia h1 {
+    color: #EFA126;
+    text-align: center;
+    margin-top: 2rem;
+    font-family: Mali;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
 
+}
+
+.metodologia h6 {
+    text-align: center;
+    font-family: Mali;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 2rem;
+}
+
+.text1,
+.text2,
+.text3 {
+    color: #565357;
+    font-family: Mali;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 300px;
+    display: inline-table;
+    padding: 12px;
+    
+
+
+
+}
+
+.metodologia .text1 h6 {
+    color: #AD5DFD;
+
+
+}
+
+.metodologia .text2 h6 {
+    color: #70B0FB;
+}
+
+.metodologia .text3 h6 {
+    color: #31B456;
+}
+
+.metodologia .funcAulas {
+    color: #565357;
+    font-family: Mali;
+    font-size: 24px;
+    font-style: normal;
+   
+    line-height: normal;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 32px;
+    justify-content: center;
+    width: 90rem;
+}
+.valores{
+    background: #F4ECEC;
+    width: 100%;
+    display: flex;
+    padding: 3rem;
+    
+    
+}
+
+.contato{
+    background: #DADFDB;
+    display: flex;
+}
+footer{
+    background: #E54724;
+    display: flex;
 }
