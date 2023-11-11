@@ -297,8 +297,8 @@
 
                     Estou ansiosa para conhecer você e seu pequeno explorador.
                 </h2>
-                <form action="">
-                    <input class="contato-form-control" type="text" placeholder="Digite seu Nome"><br>
+                <form id="my-form" action="">
+                    <input class="contato-form-control" type="text" placeholder="Digite seu Nome" id="nome"><br>
                     <input class="contato-form-control" type="email" name="email" id="email"
                         placeholder="Digite seu Email"><br>
                     <input class="contato-form-control" type="tel" name="telefone" id="telefone"
@@ -307,7 +307,7 @@
                     <textarea placeholder="Mensagem" class="contato-form-control" id="msg" name="msg" rows="6"
                         cols="50"></textarea>
                     <br>
-                    <button type="submit">Enviar</button>
+                    <button type="submit" onclick="AlertaEnviarMsg(event)">Enviar</button>
                 </form>
             </div>
 
@@ -350,6 +350,8 @@
 
 
     </footer>
+    <div id="snackbar">Mensagem Enviada!..</div>
+    <script src="/contato.js"></script>
 </body>
 
 </html>
