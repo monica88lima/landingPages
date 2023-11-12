@@ -44,3 +44,4 @@ Dentro do perfil escolhido [Professora Particular]
 
 
 Guia para criação da página elabora no figma: <a href ="https://www.figma.com/file/I3ANjKsmqMf8x7HpbqRmAi/WEB-STANDARDS?node-id=80%3A28&mode=dev"> Projeto site </a>
+ * [![Alt text](https://github.com/monica88lima/landingPages/blob/main/tela-modelo.png)
