@@ -141,8 +141,9 @@ nav span {
 .sobre {
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 24px;
-    padding: 6rem 0;
+    padding: 6rem 6rem;
 
 
 }
@@ -155,18 +156,17 @@ nav span {
 .sobre .sobreMim h1 {
     color: #000;
     font-family: Mali;
-    font-size: 64px;
+    font-size: 32px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    margin-top: 28px;
 
 }
 
 .sobre .sobreMim h2 {
     color: #000;
     font-family: Akshar;
-    font-size: 32px;
+    font-size: 24px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -188,16 +188,13 @@ nav span {
 }
 
 .sobre .sobreMim p {
-    color: rgb(65, 11, 83);
-
-    font-size: 18px;
+    color: #565357;
+    font-family: Mali;
+    font-size: 1.4rem;
     font-style: normal;
     line-height: normal;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    text-align: justify;
-    margin-top: 10px;
     justify-content: center;
-    width: 48rem;
+    text-align: justify;
 }
 
 .sobre .sobreMim details .line-space li {
@@ -245,6 +242,7 @@ nav span {
     background-image: url("img/metodologia.svg");
     background-size: cover;
     background-repeat: no-repeat;
+    padding: 0rem 6rem;
 }
 
 .metodologia article {
@@ -308,10 +306,6 @@ nav span {
     width: 300px;
     display: inline-table;
     padding: 12px;
-
-
-
-
 }
 
 .metodologia .text1 h6 {
@@ -331,11 +325,12 @@ nav span {
 .metodologia .funcAulas p {
     color: #565357;
     font-family: Mali;
-    text-align: center;
-    margin-top: 40px;
-    margin-bottom: 32px;
+    font-size: 1.4rem;
+    font-style: normal;
+    line-height: normal;
+    margin-top: 64px;
     justify-content: center;
-    width: 90rem;
+    text-align: center;
 
 }
 
@@ -683,7 +678,7 @@ footer {
     }
 }
 
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 1073px) {
     * {
         margin: 0;
         padding: 0;
@@ -698,33 +693,24 @@ footer {
 
     header {
         display: flex;
-        height: 150px;
-
-        padding: 2px 6px;
-
-        justify-content:center;
-        display: flex;
-        align-items:center;
-
-        background-color: #E54724;
-        color: #FFF;
-
-        font-family: Mali;
-        font-size: 10px;
-        font-style: normal;
-      
-        line-height: normal;
+        padding: 0;
+        justify-content: center;
+        align-items: center;
     }
-    header .logo img{
+
+    header .menu {
+        padding: 0;
+    }
+
+    header figure {
         display: none !important;
     }
 
-    main {
 
-        top: 15px !important;
+
+    header .menu ul {
+        gap: .6rem;
     }
-
-
 
 
     header .menu ul li a {
@@ -736,25 +722,33 @@ footer {
         display: none !important;
 
     }
-    
+
 
     .home {
         width: 100%;
         padding-top: 100px;
+        margin-top: 0;
+    }
+
+    .home .txtInicio {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
 
     .home .txtInicio p {
         font-size: 24px;
-
-
     }
 
     .home .txtInicio h1 {
-        font-size: 32px;
+        font-size: 1.3rem;
         text-align: center;
         font-weight: 700;
+    }
 
-
+    main {
+        top: 15px !important;
     }
 
     .saiba {
@@ -769,12 +763,13 @@ footer {
         width: 100%;
         flex-direction: column;
         padding-top: 2px;
-
+        text-align: center;
+        padding: 0;
 
     }
 
     .sobre .img2 {
-        padding-left: 66px;
+        margin-top: 10px;
 
     }
 
@@ -794,14 +789,17 @@ footer {
     }
 
     .sobre .sobreMim p {
-        font-size: .96rem;
-        width: 35rem;
-        padding: 32px;
+        font-size: .9rem;
+        padding: 0 0;
 
     }
 
     .sobre .sobreMim details {
         display: none !important;
+    }
+
+    .metodologia h1 {
+        font-size: 28px;
     }
 
     .metodologia article .escolha-aula {
@@ -813,15 +811,22 @@ footer {
 
     .metodologia article .aulas {
         font-size: .9rem;
-        padding: 0 12rem;
-        
+        padding: 0 24px;
+
     }
 
     .metodologia article .funcAulas p {
         font-size: .9rem;
-        width: 35rem;
-        
-        
+        padding: 0 24px;
+        padding-bottom: 64px;
+
+    }
+
+    .metodologia article .escolha-aula .text2 p {
+        font-size: 1rem;
+        padding: 0 24px;
+        padding-bottom: 64px;
+        text-align: center;
     }
 
     .valores {
@@ -832,8 +837,10 @@ footer {
         flex-direction: column;
         padding: 8rem 1rem;
     }
+
     .contato .contato-form h2 {
-        width: 25rem;
+        width: 16rem;
+        font-size: .9rem;
     }
 
     .footerCliente {
