@@ -3,7 +3,7 @@
 
 A proposta do projeto foi desenvolver um site para um profissional autonômo.
 
-Neste etapa desenvolver um site para um Professora Particular para crianças em fase de alfabetização.
+Neste etapa optei por desenvolver um site para um Professora Particular especialista no desenvolvimento de crianças em fase de alfabetização.
 
 :earth_americas:Site disponivel: 
  <a href ="https://anaprofessora.netlify.app/" >Professora Ana</a>
@@ -13,8 +13,8 @@ Neste etapa desenvolver um site para um Professora Particular para crianças em 
 :computer:-[Tecnologia](#tecnologia)
 
 -Html
---CSS
-JavaScript
+-CSS
+-JavaScript
 
 
 #:pushpin:-[Recursos](#recursos)
@@ -26,23 +26,16 @@ JavaScript
 Dentro do perfil escolhido [Professora Particular] 
 
 ### DoD
-
-- Formulário de Contato
-
-      [x] Informações de endereço/Contato
-      [x] Espaço para envio de mensagem
-
-- Informações sobre o Produto/Serviço Oferido
-
-     [x] Descrição das atividades prestadas
-	 [x] Valores
-     [x] Botão e frases para conseguir leads
-     
-- Detalhes do Site
-
-     [x] Publicação através de plataformas gratuitas(https://app.netlify.com/)
-     [x] Responsivo
-     [x] Semântico
+<ul>
+                 <li>Formulário de Contato</li>
+                <li>Informações de endereço/Contato</li>
+                <li>Espaço para envio de mensagem</li>
+                 <li>Descrição das atividades prestadas</li>
+                <li>Botão e frases para conseguir leads</li>
+                <li>Publicação através de plataformas gratuitas(https://app.netlify.com/)</li>
+                 <li>Responsivo</li>
+                <li>Semântico</li>
+</ul>
 
 :file_folder:Como Usar
 
