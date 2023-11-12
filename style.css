@@ -768,8 +768,8 @@ footer {
 
     }
 
-    .sobre .img2 {
-        margin-top: 10px;
+    .sobre figure {
+        display: none;
 
     }
 
